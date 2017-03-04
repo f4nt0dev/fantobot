@@ -28,7 +28,7 @@ function processRequest($text)
 	}
 	else
 	{
-		$response = "Mi stanno ancora programmando, non rompere i circuiti! Comunque ecco cosa mi hai detto:" + $text;
+		$response = "Mi stanno ancora programmando, non rompere i circuiti! Comunque ecco cosa mi hai detto:";
 	}
 	return $response;
 }
