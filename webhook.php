@@ -9,10 +9,26 @@ foreach ($messages as $message)
 	$recipientId = $message->senderId;
 	if($message->text)
 	{
-		$bot->sendTextMessage($recipientId, $message->text);
+		$response = processRequest($message->text);
+		$bot->sendTextMessage($recipientId, $response);
 	}
-	elseif($message->attachments)
+}
+function processRequest($text)
+{
+	$text = trim($text);
+	$text = strtolower($text);
+	$response = "";
+	if($text=="domanda 1")
 	{
-		$bot->sendTextMessage($recipientId, "Attachment received");
+		$response = "risposta alla domanda 1";
 	}
+	elseif ($text=="domanda 2")
+	{
+		$response = "risposta alla domanda 2";
+	}
+	else
+	{
+		$response = "Non capisco la domanda";
+	}
+	return $response;
 }
