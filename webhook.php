@@ -18,11 +18,11 @@ function processRequest($text)
 	$text = trim($text);
 	$text = strtolower($text);
 	$response = "";
-	if($text=="Ciao")
+	if($text=="ciao")
 	{
 		$response = "Ciao! Beeeep.";
 	}
-	elseif ($text=="Come stai?")
+	elseif ($text=="come stai?")
 	{
 		$response = "Vivo la mia vita un quarto di bit alla volta..";
 	}
