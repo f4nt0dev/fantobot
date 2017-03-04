@@ -19,16 +19,36 @@ function processRequest($text)
 	$text = strtolower($text);
 	$response = "";
    
+    #convenievoli
     if(preg_match('[ciao|hola]', strtolower($text))) {
         
         $response = "Ciao!! Per ora sono un pappagallo!";
   
     }
-       else if(preg_match('[come]', strtolower($text)) && preg_match('[stai]', strtolower($text))) {
+    else if(preg_match('[come]', strtolower($text)) && preg_match('[stai|va|passi]', strtolower($text))) {
         
         $response = "Vivo la mia vita un quarto di bit alla volta.";
   
     }
+        else if(preg_match('[cosa]', strtolower($text)) && preg_match('[fare]', strtolower($text))) {
+        
+        $response = "Per ora sono un pappagallo, ma mi stanno programmando!!";
+  
+    }
+    else if(preg_match('[addio]', strtolower($text))) {
+        
+        $response = "Che esagerato! Ciao!";
+  
+    }
+    
+    #info test
+    elseif ($text=="info test")
+ -	{
+        
+ -		$response = "Sei entrato nel programma di test";
+ -	}
+    
+    #default risposta!
     else {
         $response = $text;
     }
