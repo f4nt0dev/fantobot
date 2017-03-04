@@ -18,10 +18,15 @@ function processRequest($text)
 	$text = trim($text);
 	$text = strtolower($text);
 	$response = "";
+    $ciao= "ciao"
+    if(strpos($text,$ciao)) {
+      $response = "Ciao! Beeeep.";
+      return $response;
+    }
     switch ($text) {
         
-        case 'ciao':
-        $response = "Ciao! Beeeep.";
+        case 'chi sei?':
+        $response = "Sono fantobot!";
         break;
         
         case 'come stai?':
