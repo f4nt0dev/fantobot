@@ -46,10 +46,17 @@ function processRequest($text)
   
     }
     
+    #elisa
+    else if(preg_match('[fanto]', strtolower($text))) {
+        
+        $response = "Hai detto Fanto??? Lo sai che è il mio padrone e creatore? Davvero una grande persona!";
+  
+    }
+    
     #fantotest
     else if ($text=="fantotest"){
         
-		$response = "Sei entrato nel programma di test";
+		$response = date('Y-m-d H:i:s');
 	}
     
     #default risposta!
