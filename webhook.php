@@ -30,24 +30,7 @@ function processRequest($text)
         $response = "Vivo la mia vita un quarto di bit alla volta.";
   
     }
-    else if(preg_match('[cosa]', strtolower($text)) && preg_match('[fare]', strtolower($text))) {
-        
-        $response = "Per ora sono un pappagallo, ma mi stanno programmando!!";
-  
-    }
-    else if(preg_match('[addio]', strtolower($text))) {
-        
-        $response = "Che esagerato! Ciao!";
-  
-    }
-    
-    #info test
-    else if ($text=="info test")
- -	{
-        
- -		$response = "Sei entrato nel programma di test";
- -	}
-    
+
     #default risposta!
     else {
         $response = $text;
