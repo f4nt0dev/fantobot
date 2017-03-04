@@ -1,2 +1,2 @@
 # fantobot
-a big bot for small people
+We need a slogan baby
