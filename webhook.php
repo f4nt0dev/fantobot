@@ -54,7 +54,7 @@ function processRequest($text)
     }
     
     #fantotest
-    else if ($text=="fantobot test"){
+    else if ($text=="test"){
         
 	     $answer = ["attachment"=>[
       "type"=>"template",
