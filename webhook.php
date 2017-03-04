@@ -20,24 +20,9 @@ function processRequest($text)
 	$response = "";
     $ciao= "ciao"
     if(strpos($text,$ciao)) {
-      $response = "Ciao! Beeeep.";
-      return $response;
+      $response = "Ciao! Per ora sono un pappagallo.";
     }
-    switch ($text) {
-        
-        case 'chi sei?':
-        $response = "Sono fantobot!";
-        break;
-        
-        case 'come stai?':
-        $response = "Bene grazie, tu?";
-        break;
-        
-        case 'cosa sai fare?':
-        $response = "Sto imparando, per ora sono un pappagallo.";
-        break;
-        
-        default:
+    else {
         $response = $text;
     }
 	return $response;
