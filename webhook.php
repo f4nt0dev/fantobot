@@ -35,7 +35,5 @@ function processRequest($text)
         default:
         $response = $text;
         
-        
-    }
-    
+	return $response;
 }
