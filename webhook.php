@@ -18,7 +18,7 @@ function processRequest($text)
 	$text = trim($text);
 	$text = strtolower($text);
 	$response = "";
-    $ciao= "ciao"
+    $ciao= "ciao";
     if(strpos($text,$ciao)) {
       $response = "Ciao! Per ora sono un pappagallo.";
     }
