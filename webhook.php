@@ -62,15 +62,15 @@ function processRequest($text)
         "template_type"=>"generic",
         "elements"=>[
           [
-            "title"=>"Welcome to Peter\'s Hats",
-            "item_url"=>"https://www.cloudways.com/blog/migrate-symfony-from-cpanel-to-cloud-hosting/",
+            "title"=>"I'm fantobot",
+            "item_url"=>"https://google.com",
             "image_url"=>"https://www.cloudways.com/blog/wp-content/uploads/Migrating-Your-Symfony-Website-To-Cloudways-Banner.jpg",
-            "subtitle"=>"We\'ve got the right hat for everyone.",
+            "subtitle"=>"ho il circuito giusto per fare tutto",
             "buttons"=>[
               [
                 "type"=>"web_url",
-                "url"=>"https://petersfancybrownhats.com",
-                "title"=>"View Website"
+                "url"=>"https://google.com",
+                "title"=>"Apri"
               ],
               [
                 "type"=>"postback",
@@ -83,7 +83,6 @@ function processRequest($text)
       ]
     ]];
      $response = [
-    'recipient' => [ 'id' => $senderId ],
     'message' => $answer 
 	];}
     
