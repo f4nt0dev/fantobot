@@ -42,11 +42,10 @@ function processRequest($text)
     }
     
     #info test
-    else if ($text=="info test")
- -	{
+    else if ($text=="info test"){
         
- -		$response = "Sei entrato nel programma di test";
- -	}
+		$response = "Sei entrato nel programma di test";
+	}
     
     #default risposta!
     else {
