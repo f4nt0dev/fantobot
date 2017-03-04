@@ -24,6 +24,11 @@ function processRequest($text)
         $response = "Ciao!! Per ora sono un pappagallo!";
   
     }
+       if(preg_match('[come]', strtolower($text)) && (preg_match('[stai]', strtolower($text))) {
+        
+        $response = "Vivo la mia vita un quarto di bit alla volta.";
+  
+    }
     else {
         $response = $text;
     }
