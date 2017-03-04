@@ -47,7 +47,7 @@ function processRequest($text)
     }
     
     #elisa
-    else if(preg_match('\[fanto]/b', strtolower($text))) {
+    else if(preg_match('\fanto\b', strtolower($text))) {
         
         $response = "Hai detto Fanto??? Lo sai che è il mio padrone e creatore? Davvero una grande persona!";
   
