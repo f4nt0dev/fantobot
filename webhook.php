@@ -25,12 +25,17 @@ function processRequest($text)
         $response = "Ciao!! Per ora sono un pappagallo!";
   
     }
-    else if(preg_match('[come]', strtolower($text)) && preg_match('[stai]', strtolower($text))) {
+    else if(preg_match('[come]', strtolower($text)) && preg_match('[stai|va|passi]', strtolower($text))) {
         
         $response = "Vivo la mia vita un quarto di bit alla volta.";
   
     }
-    else if(preg_match('[cosa]', strtolower($text)) && preg_match('[fare]', strtolower($text))) {
+    else if(preg_match('[chi]', strtolower($text)) && preg_match('[sei]', strtolower($text))) {
+        
+        $response = "Mi prendi in giro?? Sono fantobot!";
+  
+    }
+    else if(preg_match('[cosa]', strtolower($text)) && preg_match('[fare|servi]', strtolower($text))) {
         
         $response = "Per ora sono un pappagallo, ma mi stanno programmando!!";
   
@@ -41,8 +46,8 @@ function processRequest($text)
   
     }
     
-    #info test
-    else if ($text=="info test"){
+    #fantotest
+    else if ($text=="fantotest"){
         
 		$response = "Sei entrato nel programma di test";
 	}
