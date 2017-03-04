@@ -18,17 +18,17 @@ function processRequest($text)
 	$text = trim($text);
 	$text = strtolower($text);
 	$response = "";
-	if($text=="domanda 1")
+	if($text=="Ciao")
 	{
-		$response = "risposta alla domanda 1";
+		$response = "Ciao! Beeeep.";
 	}
-	elseif ($text=="domanda 2")
+	elseif ($text=="Come stai?")
 	{
-		$response = "risposta alla domanda 2";
+		$response = "Vivo la mia vita un quarto di bit alla volta..";
 	}
 	else
 	{
-		$response = "Non capisco la domanda";
+		$response = "Mi stanno ancora programmando, non rompere i circuiti! Comunque ecco cosa mi hai detto:" + $text;
 	}
 	return $response;
 }
