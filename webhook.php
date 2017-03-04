@@ -18,17 +18,24 @@ function processRequest($text)
 	$text = trim($text);
 	$text = strtolower($text);
 	$response = "";
-	if($text=="ciao")
-	{
-		$response = "Ciao! Beeeep.";
-	}
-	elseif ($text=="come stai?")
-	{
-		$response = "Vivo la mia vita un quarto di bit alla volta..";
-	}
-	else
-	{
-		$response = $text;
-	}
-	return $response;
+    switch ($text) {
+        
+        case 'ciao':
+        $response = "Ciao! Beeeep.";
+        break;
+        
+        case 'come stai?':
+        $response = "Bene grazie, tu?";
+        break;
+        
+        case 'cosa sai fare?':
+        $response = "Sto imparando, per ora sono un pappagallo.";
+        break;
+        
+        default:
+        $response = $text;
+        
+        
+    }
+    
 }
