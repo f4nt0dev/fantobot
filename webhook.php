@@ -68,6 +68,12 @@ function processRequest($text)
   
     }
     
+        else if(preg_match('[scusami]', strtolower($text))) {
+        
+        $response = "Tranqui, cancellerò questa parte di memoria!";
+  
+    }
+    
       else if(preg_match('[voglio]', strtolower($text))) {
         
         $response = "Hey calma, non te lo hanno mai detto che l'erba voglio non cresce nemmeno nel giardino del re?";
@@ -119,7 +125,7 @@ function processRequest($text)
   
     }
     
-    else if(preg_match('[intelligente]', strtolower($text))) {
+    else if(preg_match('[intelligente|intelligenza]', strtolower($text))) {
         
         $response = "Tu sei intelligente?";
   
@@ -131,6 +137,20 @@ function processRequest($text)
         $response = "perchè dovrei?";
   
     }
+    
+    else if(preg_match('[dipende]', strtolower($text))) {
+        
+        $response = "Da cosa dipende?";
+  
+    }
+    
+     else if(preg_match('[pappagallo|ripetetere|ripetermi]', strtolower($text))) {
+        
+        $response = "Il modo più simpatico per star simpatici a qualcuno è imitarlo, lo sapevi?";
+  
+    }
+    
+    
     
     else if ($text=="dipende"){
         
