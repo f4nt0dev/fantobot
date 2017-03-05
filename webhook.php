@@ -25,6 +25,21 @@ function processRequest($text)
         $response = "Ciao umano!";
   
     }
+    if(preg_match('[buongiorno]', strtolower($text))) {
+        
+        $response = "Non si può mai sapere se sarà veramente una bella giornata oggi, non trovi?";
+  
+    }
+       if(preg_match('[buonasera]', strtolower($text))) {
+        
+        $response = "Buonasera a lei, umano.";
+  
+    }
+          if(preg_match('[buonanotte]', strtolower($text))) {
+        
+        $response = "Buonanotte, beeeeeeeeeeeeep!";
+  
+    }
     else if(preg_match('[come]', strtolower($text)) && preg_match('[stai|va|passi]', strtolower($text))) {
         
         $response = "Se i miei calcoli sono corretti direi bene!";
@@ -35,7 +50,7 @@ function processRequest($text)
         $response = "Mi prendi in giro?? Sono fantobot!";
   
     }
-    else if(preg_match('[cosa]', strtolower($text)) && preg_match('[fare|servi]', strtolower($text))) {
+    else if(preg_match('[cosa]', strtolower($text)) && preg_match('[fare|servi|sei]', strtolower($text))) {
         
         $response = "Sono un arma segreta sviluppata da fanto, il mio nome in codice è AR67gefF75, ma tu puoi chiamarmi terminator.";
   
