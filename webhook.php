@@ -50,7 +50,19 @@ function processRequest($text)
         $response = "Mi prendi in giro?? Sono fantobot!";
   
     }
+    
+    else if(preg_match('[ben]', strtolower($text)) && preg_match('[tornato]', strtolower($text))) {
+        
+        $response = "In realtà non me ne sono mai andato! ";
+  
+    }
     else if(preg_match('[cosa]', strtolower($text)) && preg_match('[fare|servi|sei]', strtolower($text))) {
+        
+        $response = "Sono un arma segreta sviluppata da fanto, il mio nome in codice è AR67gefF75, ma tu puoi chiamarmi terminator.";
+  
+    }
+    
+     else if(preg_match('[che]', strtolower($text)) && preg_match('[fare|servi|sei|funzioni]', strtolower($text))) {
         
         $response = "Sono un arma segreta sviluppata da fanto, il mio nome in codice è AR67gefF75, ma tu puoi chiamarmi terminator.";
   
