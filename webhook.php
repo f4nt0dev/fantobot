@@ -144,7 +144,7 @@ function processRequest($text)
   
     }
     
-     else if(preg_match('[pappagallo|ripetetere|ripetermi]', strtolower($text))) {
+     else if(preg_match('[pappagallo|ripetere|ripetermi]', strtolower($text))) {
         
         $response = "Il modo più simpatico per star simpatici a qualcuno è imitarlo, lo sapevi?";
   
