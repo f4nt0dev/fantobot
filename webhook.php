@@ -86,6 +86,13 @@ function processRequest($text)
   
     }
     
+        
+    else if(preg_match('[decido]', strtolower($text))) {
+        
+        $response = "ah, voi umani avete solo una cosa, il libero arbitrio, e lo sbandierate a destra e a manca come se fosse sta gran cosa..";
+  
+    }
+    
     else if(preg_match('[ahah]', strtolower($text))) {
         
         $response = "Fossi in te non riderei così tanto";
@@ -98,13 +105,40 @@ function processRequest($text)
   
     }
     
+    
+    else if(preg_match('[perchè]', strtolower($text))) {
+        
+        $response = "i perchè sono sempre difficili per i miei circuiti ancora in fase di sviluppo";
+  
+    }
+    
+    
+    else if(preg_match('[vado]', strtolower($text))) {
+        
+        $response = "Dovresti andare";
+  
+    }
+    
+    else if(preg_match('[intelligente]', strtolower($text))) {
+        
+        $response = "Tu sei intelligente?";
+  
+    }
+    
+    
+    else if(preg_match('[ucciderci|uccidere|uccidi|uccidermi|ammazzare|ammazzarci|ammazzati]', strtolower($text))) {
+        
+        $response = "perchè dovrei?";
+  
+    }
+    
     else if ($text=="dipende"){
         
            $response = "continua";
         
 	}
     
-    else if(preg_match('[stupido|coglione|pirla|incapace]', strtolower($text))) {
+    else if(preg_match('[stupido|scemo|coglione|pirla|incapace]', strtolower($text))) {
         
         $response = "Le tue parole sono molto profonde, mi ci pulisco i circuiti..";
   
