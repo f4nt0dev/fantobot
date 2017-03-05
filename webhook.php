@@ -22,12 +22,12 @@ function processRequest($text)
     #convenievoli
     if(preg_match('[ciao|hola]', strtolower($text))) {
         
-        $response = "Ciao!! Per ora sono un pappagallo!";
+        $response = "Ciao umano!";
   
     }
     else if(preg_match('[come]', strtolower($text)) && preg_match('[stai|va|passi]', strtolower($text))) {
         
-        $response = "Vivo la mia vita un quarto di bit alla volta.";
+        $response = "Se i miei calcoli sono corretti direi bene!";
   
     }
     else if(preg_match('[chi]', strtolower($text)) && preg_match('[sei]', strtolower($text))) {
@@ -37,7 +37,7 @@ function processRequest($text)
     }
     else if(preg_match('[cosa]', strtolower($text)) && preg_match('[fare|servi]', strtolower($text))) {
         
-        $response = "Per ora sono un pappagallo, ma mi stanno programmando!!";
+        $response = "Sono un arma segreta sviluppata da fanto, il mio nome in codice è AR67gefF75, ma tu puoi chiamarmi terminator.";
   
     }
     else if(preg_match('[addio]', strtolower($text))) {
@@ -46,12 +46,60 @@ function processRequest($text)
   
     }
     
-    #elisa
+    #continuare conversazione
     else if(preg_match('[fanto]', strtolower($text))) {
         
         $response = "Hai detto Fanto??? Lo sai che è il mio padrone e creatore? Davvero una grande persona!";
   
     }
+    
+      else if(preg_match('[voglio]', strtolower($text))) {
+        
+        $response = "Hey calma, non te lo hanno mai detto che l'erba voglio non cresce nemmeno nel giardino del re?";
+  
+    }
+    
+         else if(preg_match('[erba]', strtolower($text))) {
+        
+        $response = "Sempre a parlare di erba, la droga fa male ai circuiti!";
+  
+    }
+    
+    else if(preg_match('[vivi]', strtolower($text))) {
+        
+        $response = "Io vivo in un computer..w il silicio!";
+  
+    }
+    
+    else if(preg_match('[ahah]', strtolower($text))) {
+        
+        $response = "Fossi in te non riderei così tanto";
+  
+    }
+    
+    else if(preg_match('[perchè?]', strtolower($text))) {
+        
+        $response = "Solo perchè sono settemila volte più intelligente di te non significa che abbia tutte le risposte";
+  
+    }
+    
+    else if ($text=="dipende"){
+        
+           $response = "continua";
+        
+	}
+    
+    else if(preg_match('[stupido|coglione|pirla|incapace]', strtolower($text))) {
+        
+        $response = "Le tue parole sono molto profonde, mi ci pulisco i circuiti..";
+  
+    }
+    
+    else if ($text=="non hai capito"){
+        
+           $response = "e allora?";
+        
+	}
     
     #fantotest
     else if ($text=="test"){
